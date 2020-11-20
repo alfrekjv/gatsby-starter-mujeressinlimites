@@ -1,0 +1,72 @@
+.Footer {
+    color: #FFF;
+    background: $fifth;
+    text-align: center;
+
+    p {color: #FFF}
+
+    .Centered {padding: 16px}
+
+    .Symbol,
+    .Copyright,
+    .Contact {
+        display: inline-block;
+        vertical-align: top;
+
+        @media only screen and (max-width: 900px) {
+            display: block
+        }
+    }
+
+    .Symbol {
+        width: 10%;
+
+        @media only screen and (max-width: 900px) {
+            width: auto;
+        }
+
+        svg {max-width: 128px;}
+    }
+
+    .Copyright {
+        width: 60%;
+        padding-top: 1%;
+
+        img {
+            max-width: 100px;
+            margin-bottom: 24px;
+        }
+
+        @media only screen and (max-width: 900px) {
+            width: auto;
+            text-align: center
+        }
+    }
+
+    .Contact {
+        text-align: left;
+        padding-top: 3%;
+        width: 20%;
+
+        @media only screen and (max-width: 900px) {
+            width: auto;
+            text-align: center
+        }
+
+        svg {
+            vertical-align: middle;
+            margin-right: 8px;
+            width: 24px;
+            height: 24px;
+        }
+    }
+
+    .BrewedWithLove {
+        background: #34373a;
+        padding: 8px;
+
+        p {vertical-align: middle}
+
+        svg {max-width: 16px}
+    }
+}

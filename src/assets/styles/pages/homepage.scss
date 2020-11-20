@@ -1,0 +1,282 @@
+.Homepage {
+    .Block {
+        display: inline-block;
+        vertical-align: top;
+    }
+
+    .Tagline {
+        background: $fourth;
+        padding: 4% 12%;
+        text-align: center;
+
+        @media only screen and (max-width: 900px) {
+            padding: 3%
+        }
+
+        .Block {
+            display: inline-block;
+            vertical-align: top;
+            width: 50%;
+
+            &:nth-child(1) {
+                width: 60%;
+                padding: 2% 4%;
+                text-align: left;
+
+                @media only screen and (max-width: 900px) {
+                    text-align: center;
+                    display: block;
+                    width: auto
+                }
+            }
+
+            &:nth-child(2) {
+                width: 30%;
+                text-align: center;
+                
+                @media only screen and (max-width: 900px) {
+                    display: none;
+                }
+            }
+        }
+
+        h1 {
+            font-size: 1.85em;
+            font-weight: 800;
+            color: #FFFFFF;
+            font-family: $font1;
+
+            @media only screen and (max-width: 900px) {
+                font-size: 1.35em;
+            }
+        }
+
+        h2 {
+            letter-spacing: 10px;
+            padding: 3% 0 0 0;
+            font-weight: 800;
+            font-size: 1.35em;
+            margin: 0;
+            color: $first;
+        }
+
+        .Symbol {
+            max-width: 200px;
+        }
+    }
+
+    .Services {
+        text-align: center;
+        margin: 0 auto;
+        padding: 3%;
+        width: 50%;
+
+        @media only screen and (max-width: 900px) {
+            width: 95%;
+        }
+
+        .Subtitle {font-size: 1.65em}
+
+        h1 {
+            font-family: $font2;
+        }
+
+        .Service {
+            margin: 0 auto;
+            padding: 24px 16px;
+
+            img {
+                max-width: 100%;
+            }
+
+            li {
+                display: inline-block;
+                vertical-align: top;
+                margin-bottom: 24px;
+                width: 33%;
+
+                svg {
+                    padding: 16px;
+                    max-width: 90px;
+                }
+
+                .Label {
+                    font-weight: 400;
+                    font-size: 1.25em;
+                }
+            }
+        }
+    }
+
+    .Portfolio {
+        text-align: center;
+        padding: 3%;
+
+        header {
+            text-align: center;
+            margin: 0 auto;
+            width: 50%;
+
+            .Subtitle {font-size: 1.55em}
+
+            @media only screen and (max-width: 900px) {
+                width: 95%;
+            }
+        }
+
+        .Showcase {
+            .Project {
+                padding: 4% 2%;
+                margin: 0 auto;
+                width: 70vw;
+
+                @media only screen and (max-width: 600px) {
+                    padding: 3%;
+                    width: auto;
+                }
+
+                .Description, .Image {
+                    display: inline-block;
+                    vertical-align: middle;
+                }
+
+                .Description {
+                    padding: 0 5% 0 0;
+                    text-align: left;
+                    width: 50%;
+
+                    @media only screen and (max-width: 1024px) {
+                        text-align: center;
+                        width: auto;
+                        padding: 0;
+                    }
+
+                    h2 {
+                        font-family: $font2;
+                    }
+                    
+                    .Tags {
+                        font-size: 1.25em;
+                        color: $third;
+                        padding: 0;
+                        margin: 0 0 24px 0;
+                    }
+
+                    p {
+                        font-size: 1.35em;
+                        padding: 0 48px 0 0;
+
+                        @media only screen and (max-width: 1024px) {
+                            padding: 0;
+                        }
+                    }
+                }
+
+                .Image {
+                    width: 50%;
+                    
+                    @media only screen and (max-width: 1024px) {
+                        width: 100%
+                    }
+
+                    img, svg {max-width: 100%}
+                }
+            }
+
+            .Block {
+                display: inline-block;
+                background: #ededed;
+                width: 512px;
+                height: 512px;
+                margin: 24px 16px;
+
+                @media only screen and (max-width: 900px) {
+                    display: block;
+                    width: 95%;
+                }
+
+                svg {
+                    width: 512px;
+                    height: 512px;
+
+                    @media only screen and (max-width: 900px) {
+                        width: 95%;
+                    }
+                }
+
+                img {max-width: 100%;}
+
+                &:nth-child(3) {
+                    width: 1054px;
+                    margin: 0 auto;
+                    display: block;
+
+                    @media only screen and (max-width: 900px) {
+                        width: 95%;
+                    }
+                }
+            }
+        }
+    }
+
+    .Contact {
+        padding: 3%;
+        
+        header {
+            text-align: center;
+            margin: 0 auto;
+            width: 50%;
+
+            .Subtitle {font-size: 1.55em}
+
+            @media only screen and (max-width: 900px) {
+                width: 95%;
+            }
+        }
+
+        .ContactForm {
+            width: 60%;
+            padding: 16px;
+            margin: 0 auto;
+
+            @media only screen and (max-width: 900px) {
+                width: auto
+            }
+
+            button {
+                padding: 16px 16px;
+                font-weight: 800;
+                letter-spacing: 2px;
+                text-transform: uppercase;
+                background: $first;
+            }
+        }
+
+        .ContactSuccess {
+            margin: 16px 0;
+            color: #FFF;
+            padding: 16px;
+            text-align: center;
+            font-weight: 800;
+            background: $second;
+        }
+
+        .ContactError {
+            margin: 16px 0;
+            color: #FFF;
+            padding: 16px;
+            text-align: center;
+            font-weight: 800;
+            background: red;
+        }
+
+        .ContactEmpty {
+            margin: 16px 0;
+            color: #FFF;
+            padding: 16px;
+            text-align: center;
+            font-weight: 800;
+            background: $third;
+        }
+    }
+}

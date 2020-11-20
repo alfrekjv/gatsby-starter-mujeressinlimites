@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg enable-background="new 0 0 512 512" version="1.1" viewBox="0 0 512 512" xml:space="preserve" xmlns="http://www.w3.org/2000/svg">
+<style type="text/css">
+	.icon{fill:#FFFFFF;}
+</style>
+	<polygon class="icon" points="58.07 101.99 456.82 101.99 256.29 233.17"/>
+	<path class="icon" d="M260.33,285.76L22.25,149.78c0,0.06-0.01,0.13-0.01,0.19v211.47c0,26.82,21.74,48.56,48.56,48.56h370.4   c26.82,0,48.56-21.74,48.56-48.56V149.98c0-1.66-0.09-3.3-0.25-4.91L260.33,285.76z"/>
+</svg>

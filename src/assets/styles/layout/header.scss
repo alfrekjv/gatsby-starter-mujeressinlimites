@@ -1,0 +1,86 @@
+.Navbar {
+    width: 100%;
+    padding: 24px;
+    text-align: center;
+    position: fixed;
+    background: $first;
+
+    .Logo {
+        display: inline-block;
+        width: 20%;
+
+        @media only screen and (max-width: 900px) {
+            width: 40%;
+        }
+
+        @media only screen and (max-width: 500px) {
+            width: 90%;
+        }
+
+        img, svg {max-width: 100px}
+
+        svg.coretta__logo {
+            display: none;
+        
+            .tree__top {
+                fill: #000000;
+            }
+        }
+
+        svg {
+            polygon { 
+                &:nth-of-type(1) { // tree top
+                    transform: translateY(0);
+                    animation: slidedown 1s linear forwards;
+                }
+
+                &:nth-of-type(2) { // tree bottom
+                    transform: translateY(0);
+                    animation: slideup 1s linear;
+                }
+            }
+
+            path {
+                &:nth-of-type(1) {animation: fadein 1s linear; animation-delay: 0s} // F
+                &:nth-of-type(2) {animation: fadein 1s linear; animation-delay: 0.1s} // o
+                &:nth-of-type(3) {animation: fadein 1s linear; animation-delay: 0.2s} // g
+                &:nth-of-type(4) {animation: fadein 1s linear; animation-delay: 0.3s} // a
+                &:nth-of-type(5) {animation: fadein 1s linear; animation-delay: 0.4s} // t
+                &:nth-of-type(6) {animation: fadein 1s linear; animation-delay: 0.5s} // a
+                &:nth-of-type(7) {animation: fadein 1s linear; animation-delay: 0.6s} // flame 1
+                &:nth-of-type(8) {animation: fadein 1s linear; animation-delay: 0.6s} // flame 2
+                &:nth-of-type(9) {animation: fadein 1s linear; animation-delay: 0.6s} // flame 3
+            }
+        }
+    }
+
+    .Menu {
+        display: inline-block;
+        vertical-align: top;
+        text-align: right;
+        padding-top: 2.5%;
+        width: 75%;
+
+        @media only screen and (max-width: 900px) {
+            display: none;
+        }
+
+        a {
+            opacity: 0.75;
+            color: #FFFFFF;
+            padding: 0 16px;
+            text-decoration: none;
+            text-transform: uppercase;
+            letter-spacing: 1pt;
+
+            &:nth-of-type(1) {animation: fadein 1s linear; animation-delay: 0.5s}
+            &:nth-of-type(2) {animation: fadein 1s linear; animation-delay: 0.6s}
+            &:nth-of-type(3) {animation: fadein 1s linear; animation-delay: 0.7s}
+            &:nth-of-type(4) {animation: fadein 1s linear; animation-delay: 0.8s}
+
+            &:hover {
+                opacity: 1;
+            }
+        }
+    }
+}
